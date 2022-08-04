@@ -23,4 +23,4 @@ python3 evaluate.py --model_path '/ifs/loni/faculty/shi/spectrum/Student_2020/yf
 
 Step2: Get consistency measures.
 bash evaluate.sh (About two days and only occupy less than 25% of CPU resources)
-Notice: you need to change evaluate_main.py's filename, subject_name, voxel_version and so on accordingly.
+Notice: you need to change evaluate_main.py's rest_dir, filename, subject_name, voxel_version and so on accordingly.
