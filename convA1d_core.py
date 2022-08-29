@@ -179,8 +179,11 @@ class Conv1dAutoencoder(object):
            A toy autoencoder with 1d-convolutional layers.
         """
         # construct an autoencoder
+        from models.convA1d_model.final_VAE_model import AutoencoderModel
         if self.model_case == 'final_VAE':
-            from models.convA1d_model.final_VAE_model import AutoencoderModel
+            self.autoencoder_model = \
+                AutoencoderModel(dim_num=self.dim_num,
+                                 latent_dim_num=self.latent_dim_num).to(self.device)
 
         if self.str_data_tr is not None:
             self.autoencoder_model = \
